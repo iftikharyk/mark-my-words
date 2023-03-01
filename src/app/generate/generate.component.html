@@ -1,0 +1,11 @@
+
+
+<main>
+    <blockquote *ngIf="!qouteLoaded">
+        <span>Loading ....</span>
+    </blockquote>
+    <blockquote *ngIf="qouteLoaded">
+        <span>{{qoute.text}}</span>
+        <cite>{{qoute.author ? qoute.author : 'Annoymous'}}</cite>
+    </blockquote>
+</main>
