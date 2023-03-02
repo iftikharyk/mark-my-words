@@ -5,7 +5,7 @@ import { GenerateComponent } from './generate/generate.component';
 
 const routes: Routes = [
   {
-    path: 'generate',
+    path: '',
     component: GenerateComponent
   },
   {
@@ -13,8 +13,8 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path: '',
-    redirectTo: 'generate',
+    path: '**',
+    redirectTo: '',
     pathMatch: 'full'
   }
 ];
